@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Name - High-End Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <a href="#" class="logo">Boutique Name</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#contact" class="cta-button btn-book-viewing-header">Book Viewing</a>
+            </nav>
+            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <div class="mobile-nav-overlay">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="cta-button">Book Viewing</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h1>Discover Your Forever Piece</h1>
+            <p>Exquisite jewelry, timeless designs, and unparalleled craftsmanship.</p>
+            <a href="#contact" class="cta-button btn-book-viewing-hero">Book a Private Viewing</a>
+            <a href="#gallery" class="down-arrow" aria-label="Scroll to gallery">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px"
+                    height="48px">
+                    <path d="M12 16.59l-6-6 1.41-1.41L12 13.76l4.59-4.58L18 10.59z" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Our Collection</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/ring.jpg" alt="Elegant diamond ring" loading="lazy"
+                        data-caption="Elegant Diamond Ring">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/neckView.jpg" alt="Sapphire necklace" loading="lazy"
+                        data-caption="Sapphire Necklace">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/hangingBracelets.jpg" alt="Gold bracelets" loading="lazy"
+                        data-caption="Gold Bracelets">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/another_ring.jpg" alt="Ruby engagement ring" loading="lazy"
+                        data-caption="Ruby Engagement Ring">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ring.jpg" alt="Pearl earrings" loading="lazy" data-caption="Pearl Earrings">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/neckView.jpg" alt="Emerald pendant" loading="lazy" data-caption="Emerald Pendant">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal" aria-hidden="true" role="dialog" aria-labelledby="lightbox-caption">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+        <img src="" alt="" id="lightbox-image">
+        <p id="lightbox-caption"></p>
+    </div>
+
+
+    <!-- About / Story Section -->
+    <section id="about">
+        <div class="container">
+            <h2>Our Story</h2>
+            <div class="about-content">
+                <div class="about-image scroll-fade-in">
+                    <img src="images/neckView.jpg" alt="Boutique interior">
+                </div>
+                <div class="about-text scroll-fade-in">
+                    <h3>Crafting Memories Since 1988</h3>
+                    <p>For over three decades, Boutique Name has been synonymous with exceptional quality and timeless
+                        elegance. Our passion for exquisite gemstones and meticulous craftsmanship is evident in every
+                        piece we create. We believe that jewelry is more than an accessory; it's a personal statement, a
+                        cherished memory, and a legacy to be passed down through generations.</p>
+                    <p>Visit our gallery to experience the artistry and dedication that define Boutique Name.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA Section -->
+    <section id="booking-cta">
+        <div class="container">
+            <h2>Ready to Shine?</h2>
+            <p>Experience our collection firsthand. Book your private viewing today.</p>
+            <a href="#contact" class="cta-button">Book Your Viewing</a>
+        </div>
+    </section>
+
+    <!-- Contact / Booking Form Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Book Your Private Viewing</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date*</label>
+                    <input type="date" id="date" name="date" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time*</label>
+                    <input type="time" id="time" name="time" required>
+                    <span class="error-message"></span>
+                </div>
+                <div id="form-general-error" class="error-message"
+                    style="display: none; margin-bottom: 1rem; color: red; text-align: center;"></div>
+                <button type="submit" class="cta-button" disabled>Submit Request</button>
+            </form>
+            <div id="form-thank-you" style="display: none; text-align: center;">
+                <h3>Thank You!</h3>
+                <p>We've received your request and will contact you shortly to confirm your booking.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-contact">
+                <p><strong>Boutique Name</strong></p>
+                <p>123 Sparkle Ave, Jewel City, JC 12345</p>
+                <p>Email: <a href="mailto:info@boutiquename.com">info@boutiquename.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+                <p>Hours: Mon - Sat: 10am - 6pm</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><img
+                        src="https://img.icons8.com/ios-glyphs/30/333333/instagram-new.png" alt="Instagram"></a>
+                <a href="#" aria-label="Facebook"><img src="https://img.icons8.com/ios-glyphs/30/333333/facebook.png"
+                        alt="Facebook"></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Boutique Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
