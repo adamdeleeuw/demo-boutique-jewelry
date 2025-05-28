@@ -1,6 +1,6 @@
 # Demo Site: Elegant Jewelry Boutique
 
-**Live Demo:**
+**Live Demo:** https://adamdeleeuw.github.io/demo-boutique-jewelry/
 
 ## About This Project
 
@@ -78,7 +78,7 @@ To run this project on your local machine and test the backend form functionalit
 ## Notes on the GitHub Pages Live Demo
 
 *   The live demo hosted on GitHub Pages is a **static site**.
-*   The Node.js backend for the contact form **will not run on GitHub Pages**.
+*   The Node.js backend for the contact form **will not run on GitHub Pages** (if you try to submit form data you will get an error).
 *   For the live demo, the contact form might be:
     *   Configured to use a static-friendly form service (e.g., Formspree, Getform - *you would need to implement this separately if desired for the live demo*).
     *   Or, it will be for display purposes only, demonstrating the front-end validation and UI.
