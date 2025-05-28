@@ -1,6 +1,6 @@
 # Demo Site: Elegant Jewelry Boutique
 
-**Live Demo:** [Link to your live GitHub Pages demo will go here]
+**Live Demo:**
 
 ## About This Project
 
@@ -85,8 +85,7 @@ To run this project on your local machine and test the backend form functionalit
 
 ## Author
 
-*   **Adam De Leeuw**
-*   [Link to your Portfolio/LinkedIn if you have one]
+*   **Adam de Leeuw**
 
 ## License
 
